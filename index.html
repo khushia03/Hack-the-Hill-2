@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Uwaterloo Academic Tracker</title>
+</head>
+<body>
+    <h1>UWaterloo Academic Tracker</h1>
+    
+    <!-- Progress Tracker -->
+    <div id="progress-tracker">
+        <div id="progress-label">Progress: 0/36 (0%)</div>
+        <div id="progress-bar">
+            <div id="progress-fill"></div>
+        </div>
+    </div>
+
+    <div id="tracker">
+        <label for="faculty-select">Select Faculty:</label>
+        <select id="faculty-select">
+            <option value="">--Select Faculty--</option>
+            <option value="Math">Math</option>
+            <option value="Engineering">Engineering</option>
+            <option value="Science">Science</option>
+            <option value="Health">Health</option>
+        </select>
+        
+        <label for="major-select">Select Major:</label>
+        <select id="major-select" disabled>
+            <option value="">--Select Major--</option>
+        </select>
+        
+        <h2>Required Courses:</h2>
+        <div id="course-grid"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

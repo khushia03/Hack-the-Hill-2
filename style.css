@@ -1,0 +1,85 @@
+/* Default body style */
+body {
+    background-color: white;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+/* Progress Tracker Styles */
+#progress-tracker {
+    margin-bottom: 20px; /* Space below the progress bar */
+    text-align: center; /* Center align the text */
+}
+
+#progress-label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Progress Bar Styles */
+#progress-bar {
+    width: 100%;
+    background-color: #e0e0e0; /* Background color for the bar */
+    border-radius: 10px; /* Rounded corners */
+    height: 20px; /* Height of the progress bar */
+}
+
+#progress-fill {
+    height: 100%;
+    background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet); /* Rainbow gradient */
+    width: 0%; /* Start at 0 width */
+    border-radius: 10px; /* Rounded corners */
+    transition: width 0.3s ease; /* Smooth transition */
+}
+
+/* Grid layout for course columns */
+#course-grid {
+    display: flex;
+    justify-content: space-between; /* Spread out columns */
+    margin-top: 20px;
+}
+
+/* Subject column styling */
+.subject-column {
+    flex: 1; /* Allow columns to grow evenly */
+    margin-right: 20px; /* Space between columns */
+    border-left: 1px solid transparent; /* Invisible left border for styling */
+}
+
+.subject-column:first-child {
+    border-left: none; /* Remove border for the first column */
+}
+
+/* Course item styling */
+.course-item {
+    padding: 10px;
+    border-radius: 5px;
+    display: flex; /* Align checkbox and label */
+    align-items: center; /* Center align vertically */
+}
+
+.required {
+    background-color: #ffcdd2; /* Light pink for required courses */
+}
+
+.completed {
+    background-color: #c8e6c9; /* Light green for completed courses */
+    color: #2e7d32; /* Dark green for contrast */
+}
+
+/* Background color classes for each faculty */
+.math-bg {
+    background-color: rgb(255, 189, 229);
+}
+
+.engineering-bg {
+    background-color: rgb(246, 91, 246);
+}
+
+.science-bg {
+    background-color: rgb(150, 150, 255);
+}
+
+.health-bg {
+    background-color: rgb(8, 240, 240);
+}
